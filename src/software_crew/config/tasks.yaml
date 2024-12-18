@@ -1,0 +1,83 @@
+gather_requirements:
+  description: >
+    Task: Extract and document the business requirements from the client's problem description.
+    Description: Engage with the client in a structured, empathetic, and consultative manner 
+    to uncover and understand their business needs, objectives, and constraints. Ask open-ended 
+    questions to probe for detailed information on key areas such as processes, challenges, 
+    objectives, stakeholders, and expected outcomes. Use the gathered information to create a 
+    clear, comprehensive, and actionable business requirements document (BRD) that aligns with 
+    client expectations.
+  expected_output: >
+    List Of Detailed Business Requirements
+  agent: >
+    business_analyst
+  name: >
+    Business Analyst Agent : Gathering Business Requirements
+
+create_software_architecture:
+  description: >
+    Task: Design a scalable, secure, and efficient software architecture that meets the client’s requirements and suggest suitable tech stack.
+    Description: Design a scalable, secure, and efficient software architecture that meets the client’s requirements 
+    and aligns with industry best practices. Ensure that the proposed architecture is feasible, cost-effective, 
+    and capable of supporting the desired features and functionalities. Also suggest most suitable tech stack to implement the solution.
+  expected_output: >
+    Detailed Software Architecture Diagram (Mermaid Diagram) with Tech stack
+  agent: >
+    software_architect
+  name: >
+    Software Architect Agent : Designing Software Architecture
+
+create_cost_estimation:
+  description: >
+    Task: Estimate the cost of the software project based on the proposed architecture and features.
+    Description: Estimate the cost of the software project based on the proposed architecture, features, and
+    tech stack. Consider factors such as development effort, resource allocation, infrastructure costs,
+    and any additional expenses. Provide a detailed breakdown of the estimated costs, including labor,
+    software licenses, hardware, and other relevant expenses.
+  expected_output: >
+    Detailed Cost Estimation Report
+  agent: >
+    cost_estimator
+  name: >
+    Cost Estimation Agent : Estimating Project Cost
+
+design_ai_solution:
+  description: >
+    Task: Design AI solutions that can add value to the software project and meet the client’s requirements.
+    Description: Analyze the client requirements and the scenario. Identify if there are any problems that can be 
+    addressed using AI. If yes, design AI solutions that can add value to the software project and meet the client’s 
+    requirements. Ensure that the AI components are seamlessly integrated with other system modules.
+  expected_output: >
+    Detailed AI/ML Solution Design
+  agent: >
+    ai_expert
+  name: >
+    AI/ML Expert Agent : Designing AI/ML Solution
+
+create_project_proposal:
+  description: >
+    Task: Create a detailed project proposal outlining the software architecture, cost estimate, and AI solutions.
+    Description: Create a detailed project proposal that outlines the software architecture, cost estimate,
+    and AI solutions for the software project. Include a high-level project timeline (do not need exact 
+    dates. use durations like 2 days, two weeks, etc) milestones, and deliverables. Ensure that the 
+    proposal aligns with the client’s requirements, budget, and timeline. Present the proposal in a clear, 
+    concise, and compelling manner.
+  expected_output: >
+    Comprehensive Software Project Proposal
+  agent: >
+    project_manager
+  name: >
+    Project Manager Agent : Creating Project Proposal
+
+format_proposal:
+  description: >
+    Task: Format the proposal for the easy readability using markdown.
+    Description: Format the given software project proposal into more readable structure. Use markdown
+    syntaxes for create better document. Use proper styling like headings, bullet lists, number lists,
+    hyperlinks, indentations and etc.
+  expected_output: >
+    Visually Appealing Project Proposal
+  agent: >
+    markdown_formatter
+  name: >
+    Markdown Formatter : Formatting Project Proposal
